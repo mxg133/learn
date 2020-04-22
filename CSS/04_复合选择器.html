@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 将class为red的元素设置为红色（字体） */
+        .red{
+            color: red;
+        }
+        /* 
+                交集选择器
+                    作用 选中同时复合多个条件的元素
+                    语法 选择器1选择器2选择器3····选择器n{}
+                    注意 交集选择器如果有元素选择器，必须使用元素选择器开头
+         */
+        /* 将class为red的div字体设置为30px */
+        div.red{
+            font-size: 30px;
+        }
+        .a.b.c{
+            color: goldenrod;
+        }
+        /*
+            选择器分组 （并集选择器） 
+            同时选择多个选择器对应的元素
+         */
+        h1,span{
+            color: green;
+        }
+        span{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">我是div</div>
+    <p class="red">我是p元素</p>
+    <p class="red2 a b c">我是p1元素</p>
+
+    <h1>标题</h1>
+    <span>哈哈哈哈哈span</span>
+    
+</body>
+</html>

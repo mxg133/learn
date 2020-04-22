@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        将所有段落设置为红色 <p> <h1> <div>
+        */
+        /* 
+        p{
+            color: red;
+        }
+        h1{
+            color: seagreen;
+        } 
+        */
+        /* 
+        将 “儿童相见不相识”设置为红色 
+        id选择器 根据元素的id 选中一个元素 
+        语法：#id属性值{}
+        */
+        #red{
+            color: red;
+        }
+        /* 
+            将 落霞与孤鹜齐飞 秋水共长天一色 设置蓝色
+            类class选择器
+        */
+        .blus{
+            color: royalblue;
+        }
+        .abc{
+            font-size: 40px;
+        }
+        /* 
+            通配选择器 *
+                作用 ：选择所有元素
+            
+        */
+        *{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="buls abc">我是h1.</h1>
+    <p>少小离家老大回</p>
+    <P>乡音无改鬓毛衰</P>
+    <p id="red">儿童相见不相识</p>
+    <p>笑问客从何处来</p>
+    <!-- 
+        class 标签的属性 与id类似 但class可重复使用
+            可通过class实现分组
+     -->
+    <p class="blus">落霞与孤鹜齐飞</p>
+    <p class="blus">秋水共长天一色</p>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html><!--html的根(元素)，网页全部写在跟元素里面-->
+    <head><!--内容不会显示在网页，帮助浏览器/搜索引擎解析网页-->
+        <!--
+            通过meta标签设置网页字符集 避免乱码。设置网页的元数据
+            元数据是给浏览器看的
+            charset指定网页的字符集
+            name 指定的是熟虑的名称(名)
+            content 指定数据的内容（值）
+            keybwords 表示网站的关键字
+            content 表示我设置了3个关键字
+            description 网站的描述 显示在搜索引擎的结果
+        -->
+        <meta charset="utf-8">
+        <meta name = 'keywords' content="HTML5, 前端, CSS3">ik
+        <meta name="description" content="这是一个非常不错的网站">
+        <!--
+            设置3妙跳转到baidu.com
+            <meta http-equiv="refresh" content="3; url=https://www.baidu.com">
+        -->
+        <title>我的网页标签</title><!--网页的标题，搜索引擎根据此判断内部内容-->
+    </head>
+    
+    <body><!--子元素 网页的主体 用户可见-->
+        <!--
+            成对出现标签
+        --> 
+        <h1>这里是网页的一级标题</h1><!--一级标题-->
+        <h2>这里是网页的二级标题</h2><!--二级标题-->
+        <p>这里是网页的正文</p><!--正文-->
+        <!--
+            标签的属性
+        -->
+        <h1>这是我的<font color = 'red' size = '3'>第三个</font>网页</h1>
+        <p>自动保存的&nbsp;&nbsp;第一个元素</p>
+        <!--   html实体
+            特殊符号
+            &nbsp;空格
+            &gt;大于
+            &lt;小于
+            &copy;版权符号
+        -->        
+        <p>
+            ahiu你好啊&copy;
+        </p>
+        <!--
+            <hgroup>用来标题分组 可以将相关的标题放到一组
+        -->
+        <hgroup>
+            <h1>一级标题</h1>
+            <h2>二级标题</h2>
+        </hgroup>
+        <!--
+            <em>加重语气 斜体字显示
+            <strong> 加粗显示
+            <q> 某人说：“···”
+            不会换行 不独占一行 行内元素👆
+            <blockquote> 引用别人说过的话
+        -->
+        <p>今天天气<em>真</em>不错！</p>
+        <p>今天<strong>必须</strong>要完成作业！</p>
+        <p>鲁迅说<blockquote>这不是我说的！</blockquote></p>
+        孔子曰：<q>学而时习之，乐呵乐呵！</q>
+        <br>表示换行
+        <br>
+
+        <!--以下不常用-->
+        <header>aaa </header><!--网页上部，也可以表示每一块的头部-->
+        <main>bbb</main><!--网页主体->一个网页只有一个-->
+        <footer>ccc</footer><!--网页底部，也可以表示每一块的底部-->
+        <nav>ddd</nav><!--导航条-->
+        <aside>eee</aside><!--侧边栏 和主体相关又不属于主体-->
+        <article>fff</article><!--文章-->
+        <section></section><!--表示一个区块 表示其他的意思-->
+        <!--以上不常用-->
+ 
+        <!--常用的有-->
+        <div></div><!--大布局 块元素-->
+        <span></span><!--行内元素-->
+
+        <!-- 可以相互嵌套
+            1 有序列表<ol>
+            2 无序列表<ul> 用得多一点
+            3 定义列表<dl>
+            使用<ol>标签创建有序列表
+            使用<ul>标签创建无序列表
+                使用<li>表示列表项
+            使用<dl>标签创建无序列表
+                使用<dt>表示定义内容
+                使用<dd>表示定义内容的解释说明
+        -->
+        <ol>
+            <li>结构</li>
+            <li>表现</li>
+            <li>行为</li>
+        </ol>
+        <ul>
+            <li>结构</li>
+            <li>表现</li>
+            <li>行为</li>
+        </ul>
+        <dl>
+            <dt>结构</dt>
+            <dd>结构表示网页的结构，规定那里是标题 段落</dd>
+        </dl>
+
+        <!--
+            超链接
+            <a>是行内元素 可以嵌套任何元素 除了<a>自己
+                值可以是外部网站
+                也可以是内部
+            target属性 用来指定超链接打开的位置 
+                可选值:_self 在当前界面打开超链接
+                      _blank 在空白页打开此超链接
+        -->
+        <a href = 'https://3.cn'>超链接</a><br>
+        <a href = 'index1.html'>超链接2</a><br>
+        <a href="path/path1.html">超链接3</a><br>
+        <a href="https://baidu.com" target="_self">超链接4</a><br> 
+        <a href="https://baidu.com" target="_blank">超链接5</a><br> 
+        <!--<P>lorem</P> 自动生成一串英文文本-->
+        <a href="#bottom">去底部</a>
+        <a href="#p3">去p3</a>
+        <p>p1Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate nisi officiis eius corporis expedita praesentium commodi voluptas omnis impedit? Quibusdam dolorem cupiditate similique. Laborum pariatur accusamus aut in ducimus.</p>
+        <p>p2Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate nisi officiis eius corporis expedita praesentium commodi voluptas omnis impedit? Quibusdam dolorem cupiditate similique. Laborum pariatur accusamus aut in ducimus.</p>
+        <p id="p3">p3Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate nisi officiis eius corporis expedita praesentium commodi voluptas omnis impedit? Quibusdam dolorem cupiditate similique. Laborum pariatur accusamus aut in ducimus.</p>
+        <p>p4Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate nisi officiis eius corporis expedita praesentium commodi voluptas omnis impedit? Quibusdam dolorem cupiditate similique. Laborum pariatur accusamus aut in ducimus.</p>
+        <a href="javascript:;">空dede超链接</a><!--常用的一个空的超链接-->
+        <br>
+        <br>
+
+        <!--
+            <img>标签 替换元素
+                src 指定路径 也可以是网站的图片地址
+                alt 描述图片 默认不显示 在无法加载的时候显示 搜索引擎根据此····
+                width 图片的宽度(单位是像素) 同比例
+                height 图片的高度
+        -->
+        <img width="60" src="/img/1.png" alt="哔哩哔哩"><br>
+
+        <!--
+            内联标签 用于当前界面中 引入其他界面
+            src 指定要引入的网页路径
+        -->
+        <iframe src="https://www.baidu.com" width="400" height="300" frameborder="0"></iframe><br>
+
+        <!--
+            音频
+            audio 引入音频文件 默认情况下不允许用户自己控制
+            让用户控制 controls; 自动播放 autoplay; 循环播放 loop
+        -->
+        <audio src="img/毕夏 - 弹给姑娘的吉他 (姐妹版).mp3" controls></audio><br>
+        <audio controls>
+            对不起,您的浏览器不支持音频.请立即升级浏览器!
+            <source src="img/毕夏 - 弹给姑娘的吉他 (姐妹版).mp3"><br>
+            <source src="img/毕夏 - 弹给姑娘的吉他 (姐妹版).ogg"><br><!--mp3不支持的试试ogg-->
+        </audio>
+        <!--
+            视频
+            video
+        -->
+        <video controls>
+            <source src="/img/飞机.wenm">
+            <source src="/img/飞机.MP4">
+        </video>
+
+
+        <!--
+            自结束标签
+        -->
+        <br>
+        <img>
+        <img />
+        <input>
+        <input /><br>
+        <a id="bottom" href="#">回到顶部的超链接</a>
+    </body>
+</html>
