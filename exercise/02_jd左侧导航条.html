@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jd左侧导航</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        /* 设置body */
+        body{
+            background-color: #bbffaa;
+        }
+        /* 设置菜单外部容器 */
+        .left_nav{
+            width: 190px;
+            height: 450px;
+            padding: 10px 0;
+            background-color: white;
+            /* padding-left: 18px; */
+            margin: 50px auto;
+        }
+        .item{
+            width: 172px;
+            height: 25px;
+            /* 文字垂直居中
+                要让一个文字在父元素中垂直居中，只需要将父元素的line-height设置为一个和父元素的height一样的值即可 */
+            line-height: 25px;
+            padding-left: 18px;
+            font-size: 12px;
+        }
+            
+        /* 为item设置一个鼠标移入状态 */
+        .item:hover{
+            background-color:#636363;
+        }
+        .item a{
+            font-size: 14px;
+            color: #333;
+            /* 去除下划线 */
+            text-decoration: none;
+        }
+        /* 设置超链接的hover的样式 */
+        .item a:hover{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建一个外部容器 nav div ul -->
+    <nav class="left_nav">
+        <div class="item">
+            <a href="#">家用电器</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/
+            <a href="#">运营商</a>/
+            <a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">电脑</a>/<a href="#">办公</a>
+        </div>
+        <div class="item">
+            <a href="#">家居</a>/<a href="#">家具</a>/<a href="#">家装</a>/<a href="#">厨具</a>
+        </div>
+        <div class="item">
+            <a href="#">男装</a>/<a href="#">女装</a>/<a href="#">童装</a>/<a href="#">内衣</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/
+            <a href="#">运营商</a>/
+            <a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/
+            <a href="#">运营商</a>/
+            <a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/
+            <a href="#">运营的商</a>/
+            <a href="#">数码的放</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/
+            <a href="#">运营商</a>/
+            <a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/
+            <a href="#">运营商</a>/
+            <a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">安装</a>/
+            <a href="#">维修</a>/
+            <a href="#">清洁</a>/
+            <a href="#">二手</a>
+        </div>
+        <div class="item">
+            <a href="#">工业品</a>
+        </div>
+    </nav>
+
+</body>
+
+</html>
