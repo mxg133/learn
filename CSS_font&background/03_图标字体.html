@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <style>
+        /* 
+            通过伪元素设置图标字体
+                1.找到要设置图标的元素 通过before/after选中
+                2.在content中设置图标字体的编码
+                3.设置图标字体的样式
+         */
+        li {
+            list-style: none;
+        }
+
+        li::before {
+            content: '\f1b0';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: blue;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <i class="fas fa-cat"></i> -->
+    <ul>
+        <!-- <li>
+            <i class="fas fa-star"></i>
+            楚河汉界我
+        </li>
+        <li>
+            <i class="fas fa-star"></i>
+            阿火额黑人
+        </li>
+        <li>
+            <i class="fas fa-star"></i>
+            被数额我定
+        </li>
+        <li>
+            <i class="fas fa-star"></i>
+            虽然哦啊怕
+        </li> -->
+        <li>
+            楚河汉界我
+        </li>
+        <li>
+            阿火额黑人
+        </li>
+        <li>
+            被数额我定
+        </li>
+        <li>
+            虽然哦啊怕
+        </li>
+    </ul>
+    <!-- 
+        通过实体使用图标字体：
+            &#x + 图标的编码
+            （class="fas" 必须写）
+    -->
+    <span class="fas">&#xf0f3;</span>
+</body>
+
+</html>
