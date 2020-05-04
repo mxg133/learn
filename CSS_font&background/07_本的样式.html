@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        文本的样式
+        text-align 文本的水平对齐
+            可选值：
+                left 左侧对齐
+                right 右对齐
+                center 居中对齐
+                justify 两端对齐
+
+        vertical-align 设置元素垂直对齐的方式
+            可选值：
+                baseline 默认值 基线对齐
+                top 顶部对齐
+                bottom 底部对齐
+                middle 居中对齐
+                100px 向上走100px
+         */
+        .box2 {
+            width: 500px;
+            border: solid red 1px;
+            text-align: right;
+        }
+
+        .box1 {
+            width: 800px;
+            border: solid red 1px;
+            font-size: 50px;
+        }
+
+        .box1 span {
+            font-size: 20px;
+            border: blue solid 1px;
+            vertical-align: middle;
+        }
+
+        p {
+            border: solid red 1px;
+        }
+
+        img {
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">今天天气helloyXx<span>x真不错helloy</span>！</div>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque autem explicabo quis. Sequi
+        aspernatur odit repellendus qui quam maxime sint exercitationem ullam voluptates? Iste a, perspiciatis sit culpa
+        labore cupiditate.</div>
+    <p>
+        <img src="img/1.jpg" alt="">
+    </p>
+</body>
+
+</html>
