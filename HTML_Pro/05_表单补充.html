@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        提交按钮
+        重置按钮
+        普通的按钮
+        表单的几种属性
+        autocomplete="off" 关闭自动补全
+        readonly 将表单项设置为只读，数据会提交
+        disabled 将表单项设置为禁用，数据不会提交
+        autofocus 设置表单项自动获取焦点
+     -->
+    <form action="target.html">
+        <!-- <input type="text" name="username" value="hello"> -->
+        <!-- 
+            自动补全 关闭 也可以在form设置
+         -->
+        <input type="text" name="username" autocomplete="off">
+        <br><br>
+        <!-- 
+            设置为只读 数据hello会被提交
+          -->
+        <input type="text" name="username" value="hello" readonly>
+        <br><br>
+        <!-- 
+            设置为禁用 数据hello不会被提交
+         -->
+        <input type="text" name="username" value="hello" disabled>
+        <br><br>
+        <!-- 
+            设置自动获取焦点 光标
+         -->
+        <input type="text" name="username" value="hello" autofocus>
+        <br><br>
+        <input type="text" name="a">
+        <br><br>
+        <input type="text" name="b">
+        <br><br>
+        <!-- 
+            提交颜色
+         -->
+        <input type="color">
+        <br><br>
+        <!-- 
+            提交email 一般不用
+                移动端作用明显
+         -->
+        <input type="email">
+        <br><br>
+        <input type="submit">
+        <!-- 
+            重置按钮
+         -->
+        <input type="reset" value="重置">
+        <!-- 
+            普通的按钮
+         -->
+        <input type="button" value="按钮">
+        <br><br>
+        <!-- 用得多一些 -->
+        <button type="submit">提交</button>
+        <button type="reset">重置</button>
+        <button type="button">按钮</button>
+    </form>
+
+</body>
+
+</html>
