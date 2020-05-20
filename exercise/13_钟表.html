@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sec {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* .sec-wrapper{
+            width: 500px;
+            height: 500px;
+            animation: run 60s;
+        }
+        .sec{
+            height: 250px;
+            width: 4px;
+            background-color: red;
+            margin: 0 auto;
+        } */
+
+        /* 设置表的样式 */
+        .clock {
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            margin-top: 100px;
+            border-radius: 50%;
+            /* border: solid black 10px; */
+            position: relative;
+
+            background-image: url(img/13/bg.png);
+            background-image: url(img/13/bg3.jpg);
+
+            background-size: cover;
+        }
+
+        .clock>div {
+            /* 设置居中 */
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        /* 设置时针的样式 */
+        .hour-wrapper {
+            width: 70%;
+            height: 70%;
+            animation: run 720s linear infinite;
+        }
+
+        .hour {
+            height: 50%;
+            width: 6px;
+            background-color: #000;
+            margin: 0 auto;
+        }
+
+        /* 设置分针的样式 */
+        .min-wrapper {
+            width: 80%;
+            height: 80%;
+            animation: run 60s steps(60) infinite;
+        }
+
+        .min {
+            height: 50%;
+            width: 4px;
+            background-color: #000;
+            margin: 0 auto;
+        }
+
+        /* 设置秒针的样式 */
+        .sec-wrapper {
+            width: 90%;
+            height: 90%;
+            animation: run 1s steps(60) infinite;
+        }
+
+        .sec {
+            height: 50%;
+            width: 2px;
+            background-color: red;
+            margin: 0 auto;
+        }
+
+        /* 创建旋转的关键帧 */
+        @keyframes run {
+            form {
+                transform: rotateZ(0);
+            }
+
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="sec-wrapper">
+        <div class="sec"></div>
+    </div> -->
+    <!-- 创建表的容器 -->
+    <div class="clock">
+        <!-- 创建时针 -->
+        <div class="hour-wrapper">
+            <div class="hour"></div>
+        </div>
+        <!-- 创建分针 -->
+        <div class="min-wrapper">
+            <div class="min"></div>
+        </div>
+        <!-- 创建秒针 -->
+        <div class="sec-wrapper">
+            <div class="sec"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
