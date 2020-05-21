@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            变形的原点 默认值 center
+            transform-origin:20px 20px;  
+
+            对元素进行缩放的函数：(倍数放大缩小)
+                scaleX() 水平方向缩放
+                scaleY() 垂直方向缩放
+                scale() 双方向的缩放
+        */
+        html {
+            perspective: 800px;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            margin-top: 100px;
+            margin-left: 100px;
+            transition: 2s;
+
+            /* 设置变形原点 */
+            /* transform-origin: center; */
+            transform-origin: 20px 20px;
+        }
+
+        .box1:hover {
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            transform: scale(2);
+        }
+
+        .img-wrapper {
+            width: 200px;
+            height: 200px;
+            border: coral solid 1px;
+            overflow: hidden;
+
+        }
+
+        img {
+            transition: .2s;
+        }
+
+        .img-wrapper:hover img {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="img-wrapper">
+        <img src="./an.jpg" width="100%" alt="">
+    </div>
+</body>
+
+</html>
