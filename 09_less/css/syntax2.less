@@ -50,3 +50,37 @@
 .p5 {
     .p4;
 }
+
+//混合函数 在混合函数中可以直接设置变量
+.text(@w:100px, @h:200px, @color:yellowgreen) {
+    width: @w;
+    height: @h;
+    background-color: @color;
+}
+
+div {
+    //调用混合函数，按顺序传递参数
+    // .text(200px, 300px, green);
+    // .text(@color:red, @h:200px, @w:100px);
+    // .text();
+    .text(400px);
+}
+
+span {
+    color: average(red, yellow);
+  }
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #bfa;
+}
+
+body:hover {
+    background-color: darken(#bfa, 10%);
+}
