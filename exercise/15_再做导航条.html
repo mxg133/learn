@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .nav {
+            width: 1210px;
+            height: 48px;
+            /* 设置行内文字居中 */
+            line-height: 48px;
+            margin: 50px auto;
+            background-color: #E8E7E3;
+            /* 设置弹性容器 */
+            display: flex;
+        }
+
+        .nav li {
+            /* 设置增长的系数 */
+            flex-grow: 1;
+        }
+
+        .nav a {
+            display: block;
+            color: #808080;
+            /* 去除下划线 */
+            text-decoration: none;
+            font-size: 16px;
+            /* 设置文字块内居中 */
+            text-align: center;
+        }
+
+        .nav a:hover {
+            background-color: #636363;
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
     <ul class="nav">
         <li><a href="#">HTML/CSS</a></li>
@@ -16,4 +51,5 @@
         <li><a href="#">Reference</a></li>
     </ul>
 </body>
+
 </html>
