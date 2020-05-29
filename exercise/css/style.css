@@ -3,7 +3,9 @@
   padding: 0;
 }
 .w,
-.top-bar {
+.top-bar,
+.banner,
+.menu {
   width: 17.325rem;
   margin: 0 auto;
 }
@@ -28,5 +30,37 @@ a {
 .top-bar a i {
   color: #999999;
   font-size: 16px;
+}
+.banner img {
+  width: 100%;
+}
+.menu {
+  height: 8.225rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-evenly;
+}
+.menu a {
+  width: 8.175rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  color: white;
+  border-radius: 0.25rem;
+}
+.menu a i {
+  margin: 0 0.7rem 0 0.95rem;
+}
+.menu .course {
+  background-color: #f97053;
+}
+.menu .star {
+  background-color: #cd6efe;
+}
+.menu .sub {
+  background-color: #f97053;
+}
+.menu .download {
+  background-color: #1bc4fb;
 }
 /*# sourceMappingURL=./style.css.map */
