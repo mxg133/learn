@@ -34,13 +34,17 @@ a {
     // 设置辅轴的对齐方式
     align-items: center;
 
+    h1 {
+        line-height: 175/40rem;
+    }
+
     a {
         color: #24253d;
-        font-size: 36px;
+        font-size: 50/40rem;
 
         i {
             color: #999999;
-            font-size: 16px;
+            font-size: 40/40rem;
         }
     }
 }
@@ -60,7 +64,7 @@ a {
     display: flex;
     // 设置换行
     flex-flow: row wrap;
-    // 设置对齐的方式
+    // 设置主轴对齐的方式
     justify-content: space-between;
     // 设置辅轴对齐方式
     // align-items: center;
@@ -92,4 +96,102 @@ a {
     .download {
         background-color: #1bc4fb;
     }
+}
+
+// 设置课程列表
+.course-list:extend(.w) {
+
+    height: 394/40rem;
+    // 设置竖向排列
+    flex-flow: column;
+    // 设置主轴对齐的方式
+    justify-content: space-between;
+    margin-bottom: 46/40rem;
+
+    .title {
+        display: flex;
+        // 设置主轴对齐的方式
+        justify-content: space-between;
+        // 设置辅轴的对齐方式
+        align-items: center;
+
+        h2 {
+            font-size: 33/40rem;
+            color: #24253d;
+            border-left: 2px solid #3a84ff;
+            padding-left: 4px;
+        }
+
+        a {
+            font-size: 28/40rem;
+            color: #656565;
+        }
+
+        
+    }
+
+
+}
+
+// 设置课程列表项 总
+.items-list {
+    width: 720/40rem;
+    display: flex;
+    overflow: auto;
+
+}
+
+// 设置课程列表项
+.item {
+    // 设置div不会被撑大
+    box-sizing: border-box;
+
+    //设置 不希望缩小
+    flex: none;
+
+    width: 320/40rem;
+    height: 324/40rem;
+    padding: 0 22/40rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    display: flex;
+    // 设置竖向排列
+    flex-flow: column;
+    // 设置主轴对齐的方式
+    justify-content: space-evenly;
+
+    margin-right: 24/40rem;
+
+    // 设置图片的宽度
+    img {
+        width: 100%;
+    }
+
+    // 设置课程的标题
+    .course-title {
+        font-size: 32/40rem;
+        color: #24253d;
+    }
+
+    // 设置用户信息的容器
+    .user-info {
+        display: flex;
+        // 设置辅轴的对齐方式
+        align-items: center;
+    }
+
+    // 设置头像
+    .avatar {
+        width: 42/40rem;
+        height: 42/40rem;
+    }
+
+    // 设置用户昵称
+    .nickname {
+        font-size: 24/40rem;
+        color: #969393;
+        margin-left: 6px;
+    }
+
 }
