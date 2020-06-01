@@ -1,0 +1,68 @@
+.top-bar {
+    height: 48px;
+    background-color: #000;
+    padding: 0 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+// 设置左侧导航图标
+.left-menu {
+    .menu-icon {
+        width: 18px;
+        height: 48px;
+        // background-color: #bfa;
+        position: relative;
+        
+        li {
+            width: 18px;
+            height: 1px;
+            background-color: #fff;
+            position: absolute;
+
+            // 修改变形的原点
+            transform-origin: left;
+
+            // 设置过度时间
+            transition: .5s;
+        }
+
+        li:nth-child(1) {
+            top: 18px;
+        }
+
+        li:nth-child(2) {
+            top: 24px;
+        }
+
+        li:nth-child(3) {
+            top: 30px;
+        }
+        
+        // 设置hover
+        &:hover {
+            li:nth-child(1) {
+                top: 18px;
+    
+                // 向下旋转
+                transform: rotateZ(42deg);
+            }
+            li:nth-child(2) {
+                top: 24px;
+    
+                // 隐藏 两个方式
+                // visibility: hidden;
+                opacity: 0;
+            }
+            li:nth-child(3) {
+                top: 30px;
+    
+                // 向下旋转
+                transform: rotateZ(-42deg);
+            }
+        }
+    }
+}
