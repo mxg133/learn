@@ -1,3 +1,13 @@
+a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        color: rgb(197, 196, 196);
+    }
+}
+
+// 设置外部容器
 .top-bar {
     height: 48px;
     background-color: #000;
@@ -11,6 +21,13 @@
 
 // 设置左侧导航图标
 .left-menu {
+    
+        // 显示y隐藏的nav
+        &:active {
+        .nav {
+            display: block;
+        }
+    }
     .menu-icon {
         width: 18px;
         height: 48px;
@@ -43,7 +60,9 @@
         }
         
         // 设置hover
-        &:hover {
+
+        // 设置鼠标移入以后的效果
+        &:active {
             li:nth-child(1) {
                 top: 18px;
     
@@ -62,6 +81,42 @@
     
                 // 向下旋转
                 transform: rotateZ(-42deg);
+            }
+        }
+    }
+    
+    // 设置下拉菜单
+    .nav {
+        display: none;
+        background-color: #000000;
+        position: absolute;
+
+        top: 48px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        padding-top: 60px;
+
+        li {
+            width: 80%;
+            margin: 0 auto;
+            border-bottom: 1px solid #757474;  
+
+            a {
+                display: block;
+                font-size: 14px;
+                line-height: 44px; 
+            }
+
+            &:last-child a{
+                display: inline;
+                margin-right: 6px;
+            }
+            span {
+                color: #fff;
+                line-height: 44px;
+
             }
         }
     }
